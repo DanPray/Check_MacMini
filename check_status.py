@@ -4,8 +4,8 @@ import requests
 # 從 GitHub Secrets 讀取 LINE 金鑰
 LINE_ACCESS_TOKEN = os.getenv("LINE_ACCESS_TOKEN")
 LINE_USER_ID = os.getenv("LINE_USER_ID")
-TARGET_URL = "https://nextcloud-proxy.17pray.workers.dev"
-
+#TARGET_URL = "https://nextcloud-proxy.17pray.workers.dev"
+TARGET_URL = "https://google.com/error404test"
 def send_line(message):
     if not LINE_ACCESS_TOKEN or not LINE_USER_ID:
         print("錯誤：找不到 LINE 憑證設定")
